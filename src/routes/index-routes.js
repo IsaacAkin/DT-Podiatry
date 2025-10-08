@@ -14,9 +14,11 @@ const treatmentLinks = [
     { href: '/treatments/orthotics', text: 'Orthotics' },
 ]
 
+const mapsApiKey = process.env.MAPS_API_KEY;
+
 router.get('/', (req, res) => res.render('index', { navLinks, treatmentLinks }));
 router.get('/about', (req, res) => res.render('about', { navLinks, treatmentLinks }));
-router.get('/contact-us', (req, res) => res.render('contact-us', { navLinks, treatmentLinks }));
+router.get('/contact-us', (req, res) => res.render('contact-us', { navLinks, treatmentLinks, mapsApiKey }));
 router.post('/contact-us', handleContactForm);
 
 export default router;
