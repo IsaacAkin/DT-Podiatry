@@ -1,0 +1,64 @@
+<dialog class="task-dialog">
+  <form action="<%= formRoute %>" method="post" class="booking-form">
+    <div class="title-container">
+      <label for="firstName"
+        ><span aria-label="required">*</span>First Name:</label
+      >
+      <input
+        type="text"
+        name="firstName"
+        id="firstName"
+        autocomplete="off"
+        placeholder="John"
+      />
+    </div>
+
+    <div class="title-container">
+      <label for="lastName"
+        ><span aria-label="required">*</span>Last Name:</label
+      >
+      <input
+        type="text"
+        name="lastName"
+        id="lastName"
+        autocomplete="off"
+        placeholder="Doe"
+      />
+    </div>
+
+    <div class="date-container">
+      <label for="date"
+        ><span aria-label="required">*</span>Date of Birth:</label
+      >
+      <input type="date" name="date" id="date" />
+    </div>
+
+    <div class="email-container">
+      <label for="email"><span aria-label="required">*</span>Email:</label>
+      <input type="email" name="email" id="email" />
+    </div>
+
+    <div class="phone-number-container">
+      <label for="phoneNumber"
+        ><span aria-label="required">*</span>Phone Number:</label
+      >
+      <input type="tel" name="phoneNumber" id="phoneNumber" />
+    </div>
+
+    <div class="notes-container">
+      <label for="notes">Notes to podiatrist:</label>
+      <textarea
+        name="notes"
+        id="notes"
+        cols="30"
+        rows="10"
+        placeholder="Enter any information you want to tell the podiatrisy beforehand here..."
+      ></textarea>
+    </div>
+
+    <div class="button-container">
+      <button type="submit" class="submit-task-btn">Submit</button>
+      <button type="button" class="close-task-dialog">Cancel</button>
+    </div>
+  </form>
+</dialog>
