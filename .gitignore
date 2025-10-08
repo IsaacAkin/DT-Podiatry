@@ -137,3 +137,6 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Personal Files
+src/public/assets/DT_Podiatry_Website_Brief.pdf
