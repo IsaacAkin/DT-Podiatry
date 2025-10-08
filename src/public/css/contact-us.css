@@ -1,0 +1,373 @@
+@import url(https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap);
+
+:root {
+    --left: 40px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Plus Jakarta Sans", "Fredoka", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body {
+    min-height: 100vh;
+}
+
+/* SECTION ONE */
+.section-one {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    background-color: #1F2937;
+    color: #f9faf8;
+}
+
+.section-one .container {
+    border: 1px solid purple;
+    display: flex;
+    flex-flow: column;
+    gap: 50px;
+    margin-bottom: 7%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+header {
+    border: 1px solid yellow;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header>h1 {
+    display: block;
+    padding: 20px 25px;
+    margin: 0;
+    padding: 0;
+}
+
+header>h1>a {
+    border: 1px solid red;
+    color: #f9faf8;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+header ul {
+    border: 1px solid red;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* display: inline; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header>ul>li {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+}
+
+header>ul,
+header>ul>li>a {
+    display: block;
+    padding: 20px 25px;
+    text-decoration: none;
+    text-align: center;
+    /* align-self: flex-end; */
+}
+
+header>ul>li>a {
+    border: 1px solid red;
+    color: #f9faf8;
+    cursor: pointer;
+}
+
+header>ul>li>ul.dropdown>li>a {
+    color: #f9faf8;
+    cursor: pointer;
+}
+
+header>ul>li>ul.dropdown>li {
+    display: block;
+}
+
+.dropdown {
+    background-color: #1F2937;
+    border: 1px solid red;
+    width: 100%;
+    visibility: hidden;
+    display: none;
+    position: absolute;
+    z-index: 999;
+}
+
+.visible {
+    visibility: visible;
+    display: block;
+}
+
+/* a {
+    text-decoration: none;
+    color: black;
+} */
+
+/* a::after {
+    text-decoration: none;
+    color: black;
+} */
+
+/* HERO */
+.hero {
+    border: 1px solid green;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+    flex: 1;
+}
+
+.hero-text {
+    border: 1px solid pink;
+    display: flex;
+    flex-flow: column;
+    /* align-items: flex-start; */
+    /* justify-content: center; */
+    /* flex-basis: 450px; */
+    gap: 15px;
+}
+
+.hero-text .main-text {
+    border: 1px solid yellow;
+    margin: 0;
+    font-size: 48px;
+    font-weight: bold;
+    color: #f9faf8;
+    text-align: center;
+}
+
+.hero-text .secondary-text {
+    text-align: center;
+    border: 1px solid purple;
+    margin: 0;
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.hero-text .btn {
+    border: 1px solid purple;
+    height: 35px;
+    /* width: 120px; */
+    width: 150px;
+    font-size: medium;
+    font-weight: 600;
+    border-radius: 5px;
+    color: #f9faf8;
+    background-color: #3882f6;
+    border: none;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.hero-text .btn a {
+    color: #f9faf8;
+}
+
+.hero-text .btn:hover {
+    background-color: white;
+}
+
+.hero-text .btn:hover>a {
+    color: black;
+}
+
+.hero-text .btn:hover a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* SECTION TWO */
+.section-two {
+    display: flex;
+}
+
+/* MAPS */
+.maps {
+    border: 2px solid green;
+    width: 50%;
+    display: grid;
+    grid-template-rows: 0fr 1fr;
+}
+
+.maps>iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* FORM STYLING */
+.contact {
+    border: 2px solid blue;
+    width: 50%;
+}
+
+form {
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+form>h3 {
+    margin-left: var(--left);
+    margin-bottom: 0;
+}
+
+form>p {
+    margin-left: var(--left);
+    margin-top: 0;
+}
+
+form>div {
+    border: 1px solid black;
+    /* width: 900px; */
+    /* margin-left: var(--left); */
+    margin-bottom: 20px;
+}
+
+.user_name,
+.contact_info {
+    display: flex;
+    width: 100%;
+    gap: 5rem;
+}
+
+.user_name {
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.contact_info {
+    flex-direction: column;
+    gap: 3px;
+}
+
+.user_name>div>label+input,
+.contact_info>div>label+input,
+.contact_info>div>label+textarea {
+    display: block;
+}
+
+.user_name>div {
+    border: 1px solid black;
+    justify-content: flex-start;
+}
+
+/* .user_name>div>input {
+    width: 50%;
+} */
+
+input {
+    width: 300px;
+    padding: 5px;
+    height: 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #566270;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 4px solid #A593E0;
+}
+
+textarea {
+    width: 300px;
+    padding: 5px;
+    height: 150px;
+    font-size: 1rem;
+    color: white;
+    background-color: #566270;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 4px solid #A593E0;
+}
+
+input[type="email"]:invalid {
+    border-bottom: 4px solid red;
+}
+
+.error_message {
+    font-size: 1rem;
+    color: red;
+}
+
+input[type="email"]:invalid+span::after {
+    font-size: 1rem;
+    color: red;
+    content: "*Please enter a valid email address";
+}
+
+input:valid::after {
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 4px solid #75D701;
+}
+
+input:hover,
+input:focus {
+    background-color: #566295;
+}
+
+.buttons-and-links {
+    margin-left: var(--left);
+    width: fit-content;
+}
+
+button {
+    width: 11rem;
+    height: 2.7rem;
+    border-radius: 10px;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: #A593E0;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: white;
+    color: #A593E0;
+    border: 3px solid #A593E0;
+}
+
+form a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #1F2937;
+    color: #f9faf8;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-bottom: auto;
+}
