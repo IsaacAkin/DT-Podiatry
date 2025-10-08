@@ -1,0 +1,512 @@
+@import url(https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap);
+
+:root {
+    --left: 40px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Plus Jakarta Sans", "Fredoka", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body {
+    min-height: 100vh;
+}
+
+/* SECTION ONE */
+.section-one {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    background-color: #1F2937;
+    color: #f9faf8;
+}
+
+.section-one .container {
+    border: 1px solid purple;
+    display: flex;
+    flex-flow: column;
+    gap: 50px;
+    margin-bottom: 7%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+header {
+    border: 1px solid yellow;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header>h1 {
+    display: block;
+    padding: 20px 25px;
+    margin: 0;
+    padding: 0;
+}
+
+header>h1>a {
+    border: 1px solid red;
+    color: #f9faf8;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+header ul {
+    border: 1px solid red;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* display: inline; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header>ul>li {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+}
+
+header>ul,
+header>ul>li>a {
+    display: block;
+    padding: 20px 25px;
+    text-decoration: none;
+    text-align: center;
+    /* align-self: flex-end; */
+}
+
+header>ul>li>a {
+    border: 1px solid red;
+    color: #f9faf8;
+    cursor: pointer;
+}
+
+header>ul>li>ul.dropdown>li>a {
+    color: #f9faf8;
+    cursor: pointer;
+}
+
+header>ul>li>ul.dropdown>li {
+    display: block;
+}
+
+.dropdown {
+    background-color: #1F2937;
+    border: 1px solid red;
+    width: 100%;
+    visibility: hidden;
+    display: none;
+    position: absolute;
+    z-index: 999;
+}
+
+.visible {
+    visibility: visible;
+    display: block;
+}
+
+/* a {
+    text-decoration: none;
+    color: black;
+} */
+
+/* a::after {
+    text-decoration: none;
+    color: black;
+} */
+
+/* HERO */
+.hero {
+    border: 1px solid green;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+    flex: 1;
+}
+
+.hero-text {
+    border: 1px solid pink;
+    display: flex;
+    flex-flow: column;
+    /* align-items: flex-start; */
+    /* justify-content: center; */
+    /* flex-basis: 450px; */
+    gap: 15px;
+}
+
+.hero-text .main-text {
+    border: 1px solid yellow;
+    margin: 0;
+    font-size: 48px;
+    font-weight: bold;
+    color: #f9faf8;
+    text-align: center;
+}
+
+.hero-text .secondary-text {
+    text-align: center;
+    border: 1px solid purple;
+    margin: 0;
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.hero-text .btn {
+    height: 35px;
+    width: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    font-weight: 600;
+    border-radius: 5px;
+    color: #f9faf8;
+    background-color: #3882f6;
+    border: none;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.hero-text .btn:hover {
+    color: #1f2937;
+    background-color: white;
+}
+
+/* FORM STYLING */
+form {
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+form>h3 {
+    margin-left: var(--left);
+    margin-bottom: 0;
+}
+
+form>p {
+    margin-left: var(--left);
+    margin-top: 0;
+}
+
+form>div {
+    border: 1px solid black;
+    /* width: 900px; */
+    /* margin-left: var(--left); */
+    margin-bottom: 20px;
+}
+
+.user_name,
+.contact_info {
+    display: flex;
+    width: 100%;
+    gap: 5rem;
+}
+
+.user_name {
+    justify-content: flex-start;
+}
+
+.contact_info {
+    flex-direction: column;
+    gap: 3px;
+}
+
+.user_name>div>label+input,
+.contact_info>div>label+input {
+    display: block;
+}
+
+.user_name>div {
+    border: 1px solid black;
+    justify-content: flex-start;
+}
+
+.user_name>div>input {
+    width: 50%;
+}
+
+input {
+    width: 300px;
+    padding: 5px;
+    height: 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #566270;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 4px solid #A593E0;
+}
+
+input[type="email"]:invalid {
+    border-bottom: 4px solid red;
+}
+
+.error_message {
+    font-size: 1rem;
+    color: red;
+}
+
+input[type="email"]:invalid+span::after {
+    font-size: 1rem;
+    color: red;
+    content: "*Please enter a valid email address";
+}
+
+input:valid::after {
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 4px solid #75D701;
+}
+
+input:hover,
+input:focus {
+    background-color: #566295;
+}
+
+.buttons-and-links {
+    margin-left: var(--left);
+    width: fit-content;
+}
+
+button {
+    width: 11rem;
+    height: 2.7rem;
+    border-radius: 10px;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: #A593E0;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: white;
+    color: #A593E0;
+    border: 3px solid #A593E0;
+}
+
+form a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* SECTION TWO */
+.section-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.section-two .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.random-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: bolder;
+    padding: 30px;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 5%;
+    gap: 40px;
+    flex: 1;
+}
+
+.section-two p {
+    text-align: center;
+    margin: 0;
+    padding: 3%;
+}
+
+.box-one,
+.box-two,
+.box-three,
+.box-four {
+    width: 150px;
+    text-align: center;
+}
+
+.first,
+.second,
+.third,
+.fourth {
+    border: 4px solid #3882f6;
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+}
+
+/* POPULAT TREATMENTS */
+.t-boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 5%;
+    flex: 1;
+}
+
+.t-one,
+.t-two,
+.t-three {
+    text-align: center;
+    /* margin-bottom: 20px; */
+}
+
+.t-first,
+.t-second,
+.t-third {
+    border: 4px solid #3882f6;
+    width: 400px;
+    height: 400px;
+    border-radius: 15px;
+}
+
+/* SECTION THREE */
+.section-three {
+    padding: 40px;
+    background-color: #e5e7eb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote-section p {
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+}
+
+.speaker {
+    display: flex;
+    align-self: flex-end;
+}
+
+.speaker p {
+    font-size: large;
+    font-weight: 700;
+}
+
+/* SECTION FOUR */
+.section-four {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    color: #f9faf8;
+    flex: 1;
+}
+
+.section-four .container {
+    background-color: #3882f6;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 40px;
+    flex: 1;
+}
+
+.call-to-action {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.call-to-action p {
+    margin: 0;
+    padding: 0;
+}
+
+.call-to-action h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.call-to-action .text {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.call-to-action .sign-up-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-btn {
+    height: 35px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: #3882f6;
+    color: #f9faf8;
+    cursor: pointer;
+}
+
+.sign-up-btn:hover {
+    color: black;
+    background-color: #f9faf8;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #1F2937;
+    color: #f9faf8;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-bottom: auto;
+}
