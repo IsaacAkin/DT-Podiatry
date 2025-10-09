@@ -304,8 +304,8 @@ header>ul>li>ul.dropdown>li {
 dialog {
     margin: 0 auto;
     align-self: center;
-    width: 20rem;
-    border-radius: 10px;
+    width: 30rem;
+    /* border-radius: 10px; */
 }
 
 dialog::backdrop {
@@ -314,15 +314,39 @@ dialog::backdrop {
 }
 
 form {
+    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+form>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3px;
+    /* border: 1px solid red; */
+}
+
+form>div>input {
+    width: 100%;
 }
 
 input {
     height: 2rem;
 }
 
+input>span {
+    color: red;
+}
+
+.name-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
 
 .date-container,
 .project-container {
@@ -335,20 +359,10 @@ input {
     display: inline;
 }
 
-.status-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.status-container>label,
-.status-container>input {
-    cursor: pointer;
-}
-
 .button-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .button-container>button {
@@ -358,6 +372,7 @@ input {
     border-radius: 5px;
     height: 3rem;
     cursor: pointer;
+    width: 45%;
 }
 
 .button-container>button:hover {
