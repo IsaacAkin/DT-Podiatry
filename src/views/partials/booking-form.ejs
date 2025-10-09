@@ -1,59 +1,46 @@
 <dialog class="task-dialog">
   <form action="<%= formRoute %>" method="post" class="booking-form">
-    <div class="title-container">
+    <div class="first-name-container">
       <label for="firstName"
-        ><span aria-label="required">*</span>First Name:</label
+        >First Name<span aria-label="required">*</span></label
       >
-      <input
-        type="text"
-        name="firstName"
-        id="firstName"
-        autocomplete="off"
-        placeholder="John"
-      />
+      <input type="text" name="firstName" id="firstName" autocomplete="off" />
+      <span></span>
     </div>
 
-    <div class="title-container">
+    <div class="last-name-container">
       <label for="lastName"
-        ><span aria-label="required">*</span>Last Name:</label
+        >Last Name<span aria-label="required">*</span></label
       >
-      <input
-        type="text"
-        name="lastName"
-        id="lastName"
-        autocomplete="off"
-        placeholder="Doe"
-      />
+      <input type="text" name="lastName" id="lastName" autocomplete="off" />
+      <span></span>
     </div>
 
     <div class="date-container">
       <label for="date"
-        ><span aria-label="required">*</span>Date of Birth:</label
+        >Date of Birth<span aria-label="required">*</span></label
       >
       <input type="date" name="date" id="date" />
+      <span></span>
     </div>
 
     <div class="email-container">
-      <label for="email"><span aria-label="required">*</span>Email:</label>
+      <label for="email">Email<span aria-label="required">*</span></label>
       <input type="email" name="email" id="email" />
+      <span></span>
     </div>
 
     <div class="phone-number-container">
       <label for="phoneNumber"
-        ><span aria-label="required">*</span>Phone Number:</label
+        >Phone Number<span aria-label="required">*</span></label
       >
       <input type="tel" name="phoneNumber" id="phoneNumber" />
+      <span></span>
     </div>
 
     <div class="notes-container">
-      <label for="notes">Notes to podiatrist:</label>
-      <textarea
-        name="notes"
-        id="notes"
-        cols="30"
-        rows="10"
-        placeholder="Enter any information you want to tell the podiatrisy beforehand here..."
-      ></textarea>
+      <label for="notes">Message (optional)</label>
+      <textarea name="notes" id="notes" cols="30" rows="10"></textarea>
     </div>
 
     <div class="button-container">
