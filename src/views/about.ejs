@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,41 +10,25 @@
   <body>
     <div class="page-container">
       <!-- SECTION ONE -->
-      <div class="section-one">
-        <div class="container">
-          <%- include('partials/header', { navLinks: navLinks, treatmentLinks: treatmentLinks }) %>
+      <%- include('partials/header', { navLinks: navLinks, treatmentLinks: treatmentLinks }) %>
+      <section class="section-one">
           <div class="hero">
-            <div class="hero-text">
               <p class="main-text">About</p>
-              <p class="secondary-text">
+              <!-- <p class="secondary-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
                 nesciunt ipsam, veritatis reiciendis iure quaerat dignissimos,
                 cupiditate doloremque saepe voluptatum illo atque, consequuntur
                 eius deleniti sit quis sint harum unde.
-              </p>
-            </div>
+              </p> -->
           </div>
-        </div>
-      </div>
+      </section>
       <!-- SECTION ONE -->
 
       <!-- SECTION TWO -->
-      <div class="section-two">
+      <section class="section-two">
         <div class="about-podiatrist">
-          <div class="podiatrist-bio">
-            <p class="random-text">Meet our Team</p>
-            <div class="sect">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repudiandae ab veniam placeat doloribus incidunt ut ipsam ex
-                reprehenderit obcaecati! Impedit sunt quidem nostrum libero
-                ducimus sed eos est laborum molestiae?
-              </p>
-              <div class="portrait">Portrait image</div>
-            </div>
-          </div>
           <div class="clinic-values">
-            <p class="random-text">Our Values</p>
+            <p class="random-text">A highly rated podiatrist in the heart of London</p>
             <div class="sect">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -63,15 +48,23 @@
                 debitis recusandae aut quaerat possimus? Eum, eligendi. Quasi
                 exercitationem velit quaerat delectus!
               </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
-                consequatur quis! Saepe quae sequi temporibus sit aspernatur
-                nisi aliquid porro ullam deleniti ad, eveniet iusto, fugiat
-                sapiente minus hic aliquam.
-              </p>
             </div>
           </div>
-          <div class="qualifications">
+          <div class="podiatrist-bio">
+            <p class="random-text">Meet our Team</p>
+            <div class="sect">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae ab veniam placeat doloribus incidunt ut ipsam ex
+                reprehenderit obcaecati! Impedit sunt quidem nostrum libero
+                ducimus sed eos est laborum molestiae?
+              </p>
+              <div class="image-container">
+                <img src="../public/assets/images/Daniela_Graduation.jpg" alt="Image of Daniela Tiwo">
+              </div>
+            </div>
+          </div>
+          <!-- <div class="qualifications">
             <p class="random-text">Qualifications</p>
             <div class="sect">
               <p>
@@ -94,9 +87,9 @@
                 deleniti asperiores.
               </p>
             </div>
-          </div>
+          </div> -->
         </div>
-      </div>
+      </section>
       <!-- SECTION TWO -->
 
       <!-- FOOTER -->
