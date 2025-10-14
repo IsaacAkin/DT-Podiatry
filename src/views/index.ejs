@@ -9,29 +9,26 @@
   <body>
     <div class="page-container">
       <!-- SECTION ONE -->
-      <div class="section-one">
-        <div class="container">
-          <%- include('partials/header', { navLinks: navLinks, treatmentLinks: treatmentLinks }) %>
+      <%- include('partials/header', { navLinks: navLinks, treatmentLinks: treatmentLinks }) %>
+      <section class="section-one">
           <div class="hero">
-            <div class="hero-text">
-              <p class="main-text">Welcome to DT Podiatry</p>
-              <p class="secondary-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-                nesciunt ipsam, veritatis reiciendis iure quaerat dignissimos,
-                cupiditate doloremque saepe voluptatum illo atque, consequuntur
-                eius deleniti sit quis sint harum unde.
-              </p>
-              <!-- <button class="btn">Book Now</button> -->
-              <a class="btn" href="/treatments">Book Now</a>
-            </div>
+              <p class="main-text">DT Podiatry</p>
+              <p class="secondary-text">Your foot health matters</p>
+              <a class="btn" href="/treatments">See Treatments</a>
           </div>
-        </div>
-      </div>
+      </section>
       <!-- SECTION ONE -->
 
       <!-- SECTION TWO -->
-      <div class="section-two">
+      <section class="section-two">
         <div class="container">
+          <h2 class="random-text">What we offer</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium debitis sint totam minima laudantium, accusamus quibusdam blanditiis amet officia? Nihil vitae eius nisi cum libero earum necessitatibus doloribus veritatis enim.
+          Quaerat voluptatum reprehenderit ex aspernatur? Totam adipisci dicta ullam corporis possimus nam alias quibusdam quas error quaerat! Reiciendis amet dolore voluptatem quia voluptate? Velit minima ut libero ea recusandae aut?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio laboriosam quas nostrum quasi at sit impedit dicta possimus doloremque unde similique suscipit sed temporibus quisquam, commodi optio tempore iusto eius?
+          Adipisci at porro eos sequi, est nam sint nisi obcaecati commodi excepturi natus neque a nostrum animi minima ab. Quibusdam exercitationem culpa quod expedita quae excepturi odit fuga quisquam aliquam.</p>
+        </div>
+        <!-- <div class="container">
           <div class="random-text">Images of companies recognised by</div>
           <div class="boxes">
             <div class="box-one">
@@ -51,17 +48,46 @@
               <p>some subtext under an image</p>
             </div>
           </div>
-        </div>
-      </div>
+        </div> -->
+      </section>
       <!-- SECTION TWO -->
 
+      <!-- SECTION THREE -->
+      <section class="section-three">
+        <div class="quote-container">
+          <div class="quote-section">
+            <p>
+              DT Podiatry is a really great clinic and I would highly recommend
+              it.
+            </p>
+          </div>
+          <div class="speaker">
+            <p>-Jane Smith</p>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION THREE -->
+
+      <!-- SECTION FOUR -->
+      <section class="section-two">
+        <div class="container">
+          <h2 class="random-text">Why should you chose us?</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium debitis sint totam minima laudantium, accusamus quibusdam blanditiis amet officia? Nihil vitae eius nisi cum libero earum necessitatibus doloribus veritatis enim.
+          Quaerat voluptatum reprehenderit ex aspernatur? Totam adipisci dicta ullam corporis possimus nam alias quibusdam quas error quaerat! Reiciendis amet dolore voluptatem quia voluptate? Velit minima ut libero ea recusandae aut?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio laboriosam quas nostrum quasi at sit impedit dicta possimus doloremque unde similique suscipit sed temporibus quisquam, commodi optio tempore iusto eius?
+          Adipisci at porro eos sequi, est nam sint nisi obcaecati commodi excepturi natus neque a nostrum animi minima ab. Quibusdam exercitationem culpa quod expedita quae excepturi odit fuga quisquam aliquam.</p>
+        </div>
+      </section>
+      <!-- SECTION FOUR -->
+
       <!-- POPULAR TREATMENTS -->
-      <div class="popular-treatments">
+      <section class="popular-treatments">
         <div class="container">
           <div class="random-text">Our most popoular treatments</div>
           <div class="t-boxes">
             <div class="t-one">
-              <div class="t-first"></div>
+              <!-- <div class="t-first"></div> -->
+               <img src="../public/assets/images/nail-surgery.jpg" alt="Nail Surgery Image">
               <p>Nail Surgery</p>
             </div>
             <div class="t-two">
@@ -74,27 +100,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- POPULAR TREATMENTS -->
 
-      <!-- SECTION THREE -->
-      <div class="section-three">
-        <div class="quote-container">
-          <div class="quote-section">
-            <p>
-              DT Podiatry is a really great clinic and I would highly recommend
-              it.
-            </p>
-          </div>
-          <div class="speaker">
-            <p>-Jane Smith</p>
-          </div>
-        </div>
-      </div>
-      <!-- SECTION THREE -->
-
-      <!-- SECTION FOUR -->
-      <div class="section-four">
+      <!-- SECTION SIX -->
+      <!-- <section class="section-four">
         <div class="container">
           <div class="call-to-action">
             <div class="text">
@@ -107,8 +117,8 @@
             <a class="sign-up-btn" href="./treatments.html">Book Now</a>
           </div>
         </div>
-      </div>
-      <!-- SECTION FOUR -->
+      </section> -->
+      <!-- SECTION SIX -->
 
       <!-- FOOTER -->
        <%- include('partials/footer')%>
