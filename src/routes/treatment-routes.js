@@ -1,5 +1,6 @@
 import express from "express";
-import { handleNailSurgeryForm, handleBiomechanicsForm, handleOrthoticsForm, sendEmail } from "../controllers/treatment-controllers.js";
+// import { body, validationResult } from "express-validator";
+import { handleNailSurgeryForm, handleBiomechanicsForm, handleOrthoticsForm } from "../controllers/treatment-controllers.js";
 
 const router = express.Router();
 
@@ -20,7 +21,6 @@ router.post('/nail-surgery', handleNailSurgeryForm);
 router.get('/biomechanics', (req, res) => res.render('biomechanics', { navLinks, treatmentLinks, formRoute: '/treatments/biomechanics' }));
 router.post('/biomechanics', handleBiomechanicsForm);
 router.get('/orthotics', (req, res) => res.render('orthotics', { navLinks, treatmentLinks, formRoute: '/treatments/orthotics' }));
-// router.post('/orthotics', handleOrthoticsForm);
-router.post('/orthotics', sendEmail);
+router.post('/orthotics', handleOrthoticsForm);
 
 export default router;
