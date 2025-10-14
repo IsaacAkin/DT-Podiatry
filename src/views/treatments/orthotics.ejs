@@ -9,27 +9,23 @@
   <body>
     <div class="page-container">
       <!-- SECTION ONE -->
-      <div class="section-one">
-        <div class="container">
-          <%- include('partials/header', { navLinks: navLinks, treatmentLinks: treatmentLinks }) %>
+      <%- include('partials/header', { navLinks: navLinks, treatmentLinks: treatmentLinks }) %>
+      <section class="section-one">
           <div class="hero">
-            <div class="hero-text">
               <p class="main-text">Orthodics</p>
-              <p class="secondary-text">
+              <button class="btn" type="button">Book Now</button>
+              <!-- <p class="secondary-text">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim
                 corrupti perferendis blanditiis dignissimos rerum aliquid sit
                 dolorem soluta modi impedit, eius quia necessitatibus ducimus,
                 optio quod quibusdam totam mollitia maxime.
-              </p>
-              <button class="btn" type="button">Book Now</button>
-            </div>
+              </p> -->
           </div>
-        </div>
-      </div>
+      </section>
       <!-- SECTION ONE -->
 
       <!-- INFO ONE -->
-      <div class="treatment-container">
+      <section class="treatment-container">
         <div class="container">
           <div class="top-section">
             <p>
@@ -71,7 +67,7 @@
             <div class="graphic">Image</div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- INFO ONE -->
 
       <!-- INFO TWO -->

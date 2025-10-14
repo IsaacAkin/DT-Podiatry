@@ -9,27 +9,22 @@
   <body>
     <div class="page-container">
       <!-- SECTION ONE -->
-      <div class="section-one">
-        <div class="container">
-          <%- include('partials/header', { navLinks: navLinks, treatmentLinks: treatmentLinks }) %>
-          </header>
+      <%- include('partials/header', { navLinks: navLinks, treatmentLinks: treatmentLinks }) %>
+      <section class="section-one">
           <div class="hero">
-            <div class="hero-text">
               <p class="main-text">Treatments</p>
-              <p class="secondary-text">
+              <!-- <p class="secondary-text">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
                 perferendis fugiat obcaecati. Iusto fugit reprehenderit debitis
                 nihil non in quis autem! Necessitatibus accusamus laborum
                 explicabo voluptatem, at numquam obcaecati ea.
-              </p>
-            </div>
+              </p> -->
           </div>
-        </div>
-      </div>
+      </section>
       <!-- SECTION ONE -->
 
       <!-- SECTION TWO -->
-      <div class="section-two">
+      <section class="section-two">
         <div class="container">
           <div class="treatment-one">
             <p>Nail surgery</p>
@@ -50,13 +45,11 @@
             <p>General Podiatry</p>
           </div>
         </div>
-      </div>
+      </section>
       <!-- SECTION TWO -->
 
       <!-- FOOTER -->
-      <div class="footer">
-        <div>Copyright ©️ DT Podiatry 2025</div>
-      </div>
+      <%- include('partials/footer')%>
       <!-- FOOTER -->
     </div>
   </body>
