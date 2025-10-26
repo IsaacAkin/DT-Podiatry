@@ -2,6 +2,13 @@
 
 :root {
     --left: 40px;
+    --bgcolour: #1F2937;
+    /* --bgcolour: #1b2f4e; */
+    /* --bgcolour: #003277; */
+    /* --bgcolour: #01396d; */
+    --altbcolour: #e1ebfa;
+    --linkColours: #1F2937;
+    --white: #f9faf8;
 }
 
 * {
@@ -27,6 +34,7 @@ body {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 a:visited {
@@ -156,13 +164,17 @@ header>ul>li>ul.dropdown>li {
 .section-two {
     /* display: flex; */
     display: grid;
-    grid-template-rows: 0.5fr 2fr;
+    grid-template-rows: 0.7fr 2fr;
+    padding-bottom: 40px;
 }
 
-.stext {
+.section-header {
     text-align: center;
     align-self: center;
-    font-size: 30px;
+    /* font-size: 30px; */
+    /* color: #1f2937; */
+    font-size: 36px;
+    font-weight: bolder;
 }
 
 .wrapper {
@@ -171,7 +183,24 @@ header>ul>li>ul.dropdown>li {
 
 .contact-details {
     /* border: 2px solid red; */
+    /* background-color: var(--altbcolour); */
     width: 50%;
+}
+
+.contact-details>h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.contact-details>div>p:first-child {
+    font-size: 25px;
+}
+
+.contact-details>div {
+    /* border: 1px solid black; */
+    margin: 25px;
+    margin-left: 50px;
+    font-size: 15px;
 }
 
 /* MAPS */
@@ -215,6 +244,7 @@ form>div>input {
 
 input {
     height: 2rem;
+    font-size: 1rem;
 }
 
 input>span {
