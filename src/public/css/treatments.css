@@ -2,6 +2,13 @@
 
 :root {
     --left: 40px;
+    --bgcolour: #1F2937;
+    /* --bgcolour: #1b2f4e; */
+    /* --bgcolour: #003277; */
+    /* --bgcolour: #01396d; */
+    --altbcolour: #e1ebfa;
+    --linkColours: #1F2937;
+    --white: #f9faf8;
 }
 
 * {
@@ -178,20 +185,61 @@ button {
 
 /* SECTION TWO */
 .section-two {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1; */
+
+    display: grid;
+    grid-template-rows: 0.2fr 2fr;
+}
+
+.section-two>.section-header {
+    /* border: 2px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1;
+    text-align: center;
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: bolder;
+    padding: 30px;
 }
 
 .section-two>.container {
-    border: 3px solid yellow;
+    /* border: 3px solid yellow; */
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-template-rows: repeat(2, 1fr);
-    flex: 1;
     column-gap: 10px;
     row-gap: 10px;
+    margin: 15px;
+}
+
+.section-two>.container>div {
+    /* border: 2px solid green; */
+    background-color: var(--bgcolour);
+    color: white;
+    text-align: center;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-two>.container>div>p {
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    padding: 3%;
+}
+
+.section-two>.container>div>a {
+    padding: 10px;
+    border-radius: 3px;
+    background-color: white;
+    align-self: center;
 }
 
 .random-text {
@@ -205,49 +253,8 @@ button {
     padding: 30px;
 }
 
-.section-two>.container>div {
-    border: 2px solid green;
-    text-align: center;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.boxes {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-bottom: 5%;
-    gap: 40px;
-    flex: 1;
-}
-
-.section-two p {
-    text-align: center;
-    margin: 0;
-    padding: 3%;
-}
-
-.box-one,
-.box-two,
-.box-three,
-.box-four {
-    width: 150px;
-    text-align: center;
-}
-
-.first,
-.second,
-.third,
-.fourth {
-    border: 4px solid #3882f6;
-    width: 150px;
-    height: 150px;
-    border-radius: 15px;
-}
-
-/* TREATMENT */
+/* TREATMENT PAGES */
 .treatment-container {
     display: flex;
     justify-content: center;
